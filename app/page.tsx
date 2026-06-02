@@ -33,12 +33,12 @@ export default function Home() {
       </div>
 
       {/* ── Main content ── */}
-      <main className="max-w-[780px] mx-auto px-6 py-16">
+      <main className="max-w-5xl mx-auto px-6 py-16">
 
         {/* Title block */}
         <div className="mb-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
-            JUST FUCKING USE PXXL
+            JUST FUCKING USE PXXL APP
           </h1>
           <p className="text-sm text-[#aaa] italic">
             (OR ANY DEPLOYMENT PLATFORM, YOU GODDAMN CAVEMAN)
@@ -400,7 +400,7 @@ export default function Home() {
               className="text-purple-500 hover:text-purple-300 underline"
             >
               justfuckingusehtml.com
-            </a>{" "}
+            </a>{" "},
              <a
               href="https://justfuckingusereact.com"
               className="text-purple-500 hover:text-purple-300 underline"
@@ -410,7 +410,7 @@ export default function Home() {
             and the entire &quot;Just Fucking Use...&quot; ecosystem.
           </p>
        
-          <p className="mt-6 text-xs text-[#333]">reframed by <Link className="hover:text-purple-300 transition-colors" href="https://github.com/chihurumnanyaN">ChihurumanyaN</Link></p>
+          <p className="mt-6 text-xs text-[#333]">Reframed by <Link className="hover:text-purple-300 transition-colors" href="https://github.com/chihurumnanyaN">ChihurumanyaN</Link>, for freaking PXXL.app</p>
         </footer>
 
       </main>
