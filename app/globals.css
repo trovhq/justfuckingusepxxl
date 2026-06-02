@@ -13,103 +13,33 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #0a0e27 0%, #1a0d3d 50%, #0a0e27 100%);
-  background-attachment: fixed;
-  color: #ffffff;
-  font-family: 'Courier New', monospace;
+  background: #0d0d0d;
+  color: #e8e8e8;
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
-/* Grid background */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(0deg, rgba(168, 85, 247, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(168, 85, 247, 0.04) 1px, transparent 1px);
-  background-size: 50px 50px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-main {
-  position: relative;
-  z-index: 1;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(168, 85, 247, 0.1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(168, 85, 247, 0.5);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(168, 85, 247, 0.7);
-}
-
-/* Text selection */
 ::selection {
-  background: rgba(168, 85, 247, 0.3);
-  color: #ffffff;
+  background: rgba(139, 92, 246, 0.5);
+  color: #fff;
 }
 
-/* Links */
-a {
-  transition: all 0.3s ease;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #c084fc; }
 
-a:hover {
+a { transition: color 0.2s ease; }
+
+/* inline code style */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.88em;
   color: #d8b4fe;
-}
-
-/* Buttons */
-button {
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
-}
-
-/* Images with border glow */
-img {
-  border-radius: 0.5rem;
-}
-
-/* Headings gradient */
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
-}
-
-/* Section borders */
-section {
-  position: relative;
-}
-
-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.3), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-section:hover::before {
-  opacity: 1;
 }
