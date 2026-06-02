@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Just Fucking Use PXXL",
@@ -75,6 +76,23 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Hero Image - Image 1 */}
+        <section className="my-8">
+          <div className="relative w-full h-auto rounded-lg overflow-hidden border-2 border-gray-700">
+            <Image
+              src="/1.png"
+              alt="Pxxl hero landing page - Ship your databases faster than ever"
+              width={1456}
+              height={820}
+              priority
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-gray-400 mt-2 text-center">
+            Get started in seconds. Live URL immediately.
+          </p>
+        </section>
+
         {/* Section: Why Switch */}
         <section>
           <h2 className="text-3xl font-bold mb-4 text-red-500">
@@ -121,6 +139,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Features & Trust Image - Image 2 */}
+        <section className="my-8">
+          <div className="relative w-full h-auto rounded-lg overflow-hidden border-2 border-gray-700">
+            <Image
+              src="/2.png"
+              alt="Pxxl features - Instant deployments, team collaboration, smart firewall"
+              width={1456}
+              height={820}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-gray-400 mt-2 text-center">
+            Trusted by the fastest growing startups. Features that matter.
+          </p>
+        </section>
+
         {/* Section: Deployment Pipelines */}
         <section>
           <h2 className="text-2xl font-bold mb-4 text-yellow-400">
@@ -164,6 +198,22 @@ export default function Home() {
               configuration-addicted dolt.
             </p>
           </div>
+        </section>
+
+        {/* Dashboard Image - Image 3 */}
+        <section className="my-8">
+          <div className="relative w-full h-auto rounded-lg overflow-hidden border-2 border-gray-700">
+            <Image
+              src="/3.png"
+              alt="Pxxl dashboard - Ready to deploy"
+              width={1456}
+              height={820}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-gray-400 mt-2 text-center">
+            One dashboard. Zero configuration. Ready to ship.
+          </p>
         </section>
 
         {/* Section: Smarter Infrastructure */}
@@ -240,6 +290,22 @@ export default function Home() {
               character-building pursuit. It's just fucking exhausting.
             </p>
           </div>
+        </section>
+
+        {/* Framework Support Image - Image 4 */}
+        <section className="my-8">
+          <div className="relative w-full h-auto rounded-lg overflow-hidden border-2 border-gray-700">
+            <Image
+              src="/4.png"
+              alt="Pxxl framework support - Java, Python, Rust, Go, PHP, HTML, React, Express, Vue, Next.js, Nuxt, Nest, Svelte, Laravel"
+              width={1456}
+              height={820}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-gray-400 mt-2 text-center">
+            Supports everything. Your framework matters. Zero config anyway.
+          </p>
         </section>
 
         {/* Section: Cost Concerns */}
