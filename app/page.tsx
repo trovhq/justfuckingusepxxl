@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Just Fucking Use PXXL",
@@ -400,26 +401,16 @@ export default function Home() {
             >
               justfuckingusehtml.com
             </a>{" "}
+             <a
+              href="https://justfuckingusereact.com"
+              className="text-purple-500 hover:text-purple-300 underline"
+            >
+              justfuckingusereact.com
+            </a>{" "}
             and the entire &quot;Just Fucking Use...&quot; ecosystem.
           </p>
-          <p className="mb-3 text-[#444] font-bold">Also check out:</p>
-          <div className="grid grid-cols-2 gap-1 text-xs text-purple-600">
-            {[
-              "Just Fucking Use HTML",
-              "Just Fucking Use React",
-              "Just Fucking Use CSS",
-              "Just Fucking Use Docker",
-              "Just Fucking Use Tailwind",
-              "Just Fucking Use Postgres",
-              "Just Fucking Use Go",
-              "Just Fucking Use Astro",
-            ].map((link) => (
-              <a key={link} href="#" className="hover:text-purple-300 transition-colors">
-                {link}
-              </a>
-            ))}
-          </div>
-          <p className="mt-6 text-xs text-[#333]">Open source under the MIT License.</p>
+       
+          <p className="mt-6 text-xs text-[#333]">reframed by <Link className="hover:text-purple-300 transition-colors" href="https://github.com/chihurumnanyaN">ChihurumanyaN</Link></p>
         </footer>
 
       </main>
